@@ -2,7 +2,9 @@
 A Library that helps to autload Microsoft Bot Framework dialogs. Autoloads dialogs from provided folder, 
 able to pass custom arguments for dialogs. It is supposed that every javascript file 
 in the folder will expose only function with bot as first argument.
-**Recommendation****: match dialog id's with the dialog folder structure.   
+**Recommendation**: match dialog id's with the dialog folder structure.
+   
+Please do not hesitate to ask or publish your proposals. 
 
 # Loader arguments 
 So `require('botbuilder-dialog-loader')` will return a function that requires next arguments:
