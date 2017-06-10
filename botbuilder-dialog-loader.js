@@ -2,6 +2,7 @@ module.exports = function (bot, basePath, config) {
 
   const fs = require('fs');
   const path = require('path');
+  config = "object" == typeof config ? config : {};
 
   let loadJsFiles = function ( basePath, config ) {
     let files = fs.readdirSync( basePath );
