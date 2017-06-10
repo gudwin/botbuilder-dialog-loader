@@ -1,8 +1,27 @@
 # botbuilder-dialog-loader
-A Library that helps to autload Microsoft Bot Frameworkd dialogs. Autoloads dialogs from provided folder, 
+A Library that helps to autload Microsoft Bot Framework dialogs. Autoloads dialogs from provided folder, 
 able to pass custom arguments for dialogs. It is supposed that every javascript file 
 in the folder will expose only function with bot as first argument.
 **Recommendation****: match dialog id's with the dialog folder structure.   
+
+# Loader arguments 
+So `require('botbuilder-dialog-loader')` will return a function that requires next arguments:
+. **bot** - a [UniversalBot](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html) instance;
+. **basePath** - a path to dialogs folder;
+. **config** - (optional) a configuration object. Every object's key reflects to 
+a folder or to a concrete javascript file (without extension). Key's value 
+should contain or an object (in case of folder) or an array of arguments, 
+that will be passed to thefile. Example:
+```javascript
+ {
+    "folderA" : {
+        "folderB" : {
+           "some_dialogs" : [arg1, ..., argN] // A
+        }
+    },
+    "welcome" : ["Hello", "Wolrd!"]
+ }
+```
 
 # Usage Example
 

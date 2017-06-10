@@ -2,10 +2,10 @@
   "engines": {
     "node": "7.8.0"
   },
-  "name": "botbuilder-formflow",
-  "version": "0.2.2",
-  "description": "Form flow with subdialogs",
-  "main": "botbuilder-formflow.js",
+  "name": "botbuilder-dialog-load",
+  "version": "0.0.1",
+  "description": "A Library that helps to autload Microsoft Bot Framework dialogs",
+  "main": "botbuilder-dialog-load.js",
   "dependencies": {
     "botbuilder": "^3.8.2"
   },
@@ -17,23 +17,19 @@
     "node-uuid": "^1.4.8",
     "sprintf": "^0.1.5"
   },
-  "scripts": {
-    "test": "node ./spec/testRunner.js ",
-    "test_debug": "node ./spec/testRunner.js --NODE_DEBUG=botbuilder"
-  },
   "bugs": {
-    "url": "https://github.com/gudwin/botbuilder-formflow/issues",
+    "url": "https://github.com/gudwin/botbuilder-dialog-loader/issues",
     "email": "d@dd-team.org"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gudwin/botbuilder-formflow.git"
+    "url": "https://github.com/gudwin/botbuilder-dialog-loader.git"
   },
   "keywords": [
     "botbuilder",
-    "formflow",
-    "subdialog",
-    "chatbot",
+    "loader",
+    "dialog",
+    "chatbot dialog loader",
     "mbf"
   ],
   "author": "Dmitry Shevchenko",
