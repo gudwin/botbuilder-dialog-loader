@@ -19,7 +19,7 @@ module.exports = function (bot, basePath, config) {
         if ( '.js' == pathInfo.ext ) {
           let callback = require( basePath + src );
           let arguments = [bot].concat(subConfig);
-          if ( callback ) {
+          if ( "function" == typeof callback ) {
             callback.apply( null, arguments);
           }
 

@@ -13,7 +13,8 @@ So `require('botbuilder-dialog-loader')` will return a function that requires ne
 . **config** - (optional) a configuration object. Every object's key reflects to 
 a folder or to a concrete javascript file (without extension). Key's value 
 should contain or an object (in case of folder) or an array of arguments, 
-that will be passed to thefile. Example:
+that will be passed to thefile.
+## Configuration object Example:
 ```javascript
  {
     "folderA" : {
@@ -24,6 +25,8 @@ that will be passed to thefile. Example:
     "welcome" : ["Hello", "Wolrd!"]
  }
 ```
+
+The Library **will ignore** any loaded file if it will not return a callback
 
 # Usage Example
 
