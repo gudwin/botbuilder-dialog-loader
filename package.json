@@ -3,7 +3,7 @@
     "node": "7.8.0"
   },
   "name": "botbuilder-dialog-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Library that helps to autload Microsoft Bot Framework dialogs",
   "main": "botbuilder-dialog-loader.js",
   "dependencies": {
